@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EV Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>⚡ EV Savings Calculator</h1>
+
+  <div class="form">
+    <input type="number" id="dailyKm" placeholder="Daily KM Driven">
+    <input type="number" id="petrolPrice" placeholder="Petrol Price (₹/L)">
+    <input type="number" id="evCost" placeholder="Electricity Cost (₹/kWh)">
+    <input type="number" id="mileage" placeholder="Car Mileage (km/L)">
+
+    <button onclick="calculate()">Calculate Savings</button>
+  </div>
+
+  <div class="result">
+    <p id="petrolCost"></p>
+    <p id="evRunningCost"></p>
+    <h2 id="savings"></h2>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
